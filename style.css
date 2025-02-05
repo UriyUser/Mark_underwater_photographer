@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Triodion&display=swap');
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+ .anim {
+    position: relative;
+    top: -8px;
+    left: -8px;
+    width: 1275px;
+    height: 880px;
+    background: url(img/Ocean.jpg);
+    background-repeat: repeat-x;
+    
+    animation: play 20s linear infinite;
+ }
+@keyframes play {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+#r {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    transform: scale(-1, 1);
+}
+#f {
+    position: absolute;
+    bottom: 150px;
+    left: 400px;
+    transform: scale(-1, 1);
+}
+#a {
+    position: absolute;
+    width: 300px;
+    top: 300px;
+    left: 50px;
+    transform: scale(-1, 1);
+}
+audio {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 10px;
+    right: 5px;
+}
+.sprite-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.sprite-image {
+    position: absolute;
+    height: 110px;
+    width: 215px;
+    background: url(img/S.png) 0px 0px;
+    top: 100px;
+    animation: play 0.8s steps(4) infinite;
+}
+@keyframes play {
+    100% {
+        background-position: -860px;
+    }
+}
+marquee {
+    position: absolute;
+    background: linear-gradient(45deg, #FF00FF, #0000FF, #3CB371);
+    color: #fff;
+    font-size: 30px;
+    font-family: "Triodion";
+    top: 10px;
+    left: 0;
+}
